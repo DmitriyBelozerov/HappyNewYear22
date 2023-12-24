@@ -6,11 +6,18 @@ import React from 'react';
 
 function App() {
     const [items, setItems] = React.useState([]);
+
+
+
     console.log(items);
 
 
-    function handleSubmitProduct(valueProduct, valuePrice) {
-        setItems([{ valueProduct: valueProduct, valuePrice: valuePrice }, ...items]);
+    function handleSubmitProduct(valueProduct, valuePrice, lastName) {
+        setItems([{ valueProduct, valuePrice, lastName }, ...items]);
+    }
+
+    function deleteItem(item) {
+        setItems(items.filter(elem => elem !==item))
     }
 
 
@@ -20,8 +27,8 @@ function App() {
             <Header />
             <Form onSubmitProduct={handleSubmitProduct} />
             <div>
-                <ItemsList items={items} />
-                {/* <Result summ={items}/> */}
+                <ItemsList items={items} deleteItem={deleteItem}/>
+                <Result items={items}/>
             </div>
 
         </>
