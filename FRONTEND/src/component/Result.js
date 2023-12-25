@@ -11,9 +11,7 @@ function Result(props) {
         ))
     }, [props.items])
 
-    console.log(props.items);
-
-    function calculateAmount (lastN) {
+    function calculateAmount(lastN) {
         return props.items.reduce(
             (sum, element, index, array) => {
                 if (element.lastName === lastN) {
@@ -28,11 +26,11 @@ function Result(props) {
     return (
         <>
             <h3>Общая сумма: {total} рублей</h3>
-            <p>Количество семей / человек: 3</p>
+            <p>Количество семей: 3</p>
             <p>Затраты на семью в среднем: {Math.round(total / 3)} руб.</p>
-            <p>Затраты Белозеровы: { calculateAmount ('belozerov')}</p>
-            <p>Затраты Устиновы: { calculateAmount ('ustinov')}</p>
-            <p>Затраты Трофимовы: { calculateAmount ('trofimov')}</p>
+            <p>Затраты Белозеровы: {calculateAmount('belozerov')}</p>
+            <p>Затраты Устиновы: {calculateAmount('ustinov')}</p>
+            <p>Затраты Трофимовы: {calculateAmount('trofimov')}</p>
 
         </>
 

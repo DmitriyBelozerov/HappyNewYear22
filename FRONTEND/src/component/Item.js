@@ -1,7 +1,6 @@
 // import {cross} from '../images/crosscirclesvgrepocom.svg';
 
 function Item(props) {
-    console.log(props);
 
     function handleDeleteItem () {
         props.deleteItem(props.item)
