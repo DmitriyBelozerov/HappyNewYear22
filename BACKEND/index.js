@@ -7,6 +7,7 @@ const PORT = 3001;
 const allowedCors = [
     'http://localhost:3000',
     'http://localhost:3001',
+    'http://37.139.34.11'
   ];
 
 const app = express();

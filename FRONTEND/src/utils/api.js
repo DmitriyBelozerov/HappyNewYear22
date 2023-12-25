@@ -1,5 +1,5 @@
 const apiOptions = {
-    baseUrl: "http://localhost:3001/items",
+    baseUrl: "http://37.139.34.11/items",
     headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json',
