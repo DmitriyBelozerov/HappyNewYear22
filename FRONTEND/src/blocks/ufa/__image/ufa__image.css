@@ -1,0 +1,20 @@
+.ufa__image {
+
+    background-image: url(../../../images/ufa.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    animation: rotat 10s  linear infinite;
+    
+}
+
+@keyframes rotat {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}

@@ -12,3 +12,10 @@
 @import url(./blocks/popup/__title/popup__title.css);
 @import url(./blocks/popup/__button/popup__button.css);
 @import url(./blocks/popup/__button-block/popup__button-block.css);
+@import url(./blocks/ufa/ufa.css);
+@import url(./blocks/ufa/__image/ufa__image.css);
+@import url(./blocks/ufa/_view/ufa_view.css);
+@import url(./blocks/ufa/__image/_center/ufa__image_center.css);
+@import url(./blocks/spb/spb.css);
+@import url(./blocks/spb/_view/spb_view.css);
+@import url(./blocks/spb/__title/spb__title.css);

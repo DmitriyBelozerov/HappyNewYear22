@@ -1,0 +1,14 @@
+.ufa__image_center {
+    animation: rotat 15s  linear infinite;
+    
+}
+
+@keyframes rotat {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}

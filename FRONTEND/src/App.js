@@ -5,11 +5,16 @@ import Result from './component/Result';
 import React from 'react';
 import api from './utils/api';
 import Popup from './component/Popup';
+import Ufa from './component/Ufa';
+import Spb from './component/Spb';
+
 
 function App() {
     const [items, setItems] = React.useState([]);
     const [openPopup, setOpenPopup] = React.useState(false);
     const [itemForDelete, setItemForDelete] = React.useState(undefined)
+    const [ufaView, setUfaView] = React.useState(false);
+    const [spbView, setSpbView] = React.useState(false);
 
     React.useEffect(() => {
         api.getItems()
@@ -47,16 +52,32 @@ function App() {
         setItemForDelete(item)
     }
 
+    function showUfa() {
+        setUfaView(true);
+        setTimeout(()=>{
+            setUfaView(false);
+        }, 10000)
+    }
+
+    function showSpb() {
+        setSpbView(true);
+        setTimeout(()=>{
+            setSpbView(false);
+        }, 10000)
+    }
+
     return (
         <>
 
-            <Header />
+            <Header showUfa={ showUfa} />
+            <Ufa show={ufaView}></Ufa>
             <Form onSubmitProduct={handleSubmitProduct} />
             <div>
                 <ItemsList items={items} deleteItem={confirmDelete} />
-                <Result items={items} />
+                <Result items={items} showSpb={showSpb}/>
             </div>
             <Popup isOpen={openPopup} onClose={closePopup} onDelete={deleteItem} ></Popup>
+            <Spb show={spbView}></Spb>
 
         </>
     )

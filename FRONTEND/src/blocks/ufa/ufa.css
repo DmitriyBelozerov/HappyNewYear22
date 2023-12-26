@@ -1,0 +1,6 @@
+.ufa {
+    height: 100px;
+    width: fit-content;
+    display: none;
+    flex-direction: row;
+}

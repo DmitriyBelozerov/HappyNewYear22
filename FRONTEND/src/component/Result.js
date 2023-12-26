@@ -3,6 +3,10 @@ import React, { useEffect } from "react";
 function Result(props) {
     const [total, setTotal] = React.useState(null);
 
+    function showSpb() {
+        props.showSpb();
+    }
+
     useEffect(() => {
         setTotal(props.items.reduce(
             (sum, element) =>
@@ -29,7 +33,7 @@ function Result(props) {
             <p>Количество семей: 3</p>
             <p>Затраты на семью в среднем: {Math.round(total / 3)} руб.</p>
             <p>Затраты Белозеровы: {calculateAmount('belozerov')}</p>
-            <p>Затраты Устиновы: {calculateAmount('ustinov')}</p>
+            <p onClick={showSpb}>Затраты Устиновы: {calculateAmount('ustinov')}</p>
             <p>Затраты Трофимовы: {calculateAmount('trofimov')}</p>
 
         </>

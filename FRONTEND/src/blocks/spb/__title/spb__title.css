@@ -1,0 +1,29 @@
+.spb__title {
+    padding: 0;
+    margin: 0;
+    font-size: 90px;
+    font-weight: 700;
+    background: linear-gradient(to bottom right, red, orange, green, blue, rgb(151, 23, 184));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rotat-spb 5s ease infinite;
+
+}
+
+
+
+
+@keyframes rotat-spb {
+    0% {
+        rotate: 0deg;
+    }
+    25% {
+        rotate: -20deg;
+    }
+    25% {
+        rotate: -0deg;
+    }
+    25% {
+        rotate: 20deg;
+    }
+}
