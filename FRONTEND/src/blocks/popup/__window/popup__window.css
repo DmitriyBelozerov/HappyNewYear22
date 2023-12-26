@@ -1,6 +1,6 @@
 .popup__window {
     width: 200px;
-    height: 200px;
+    height: 150px;
     background-color: black;
     position: relative;
     top: calc(50% - 100px);

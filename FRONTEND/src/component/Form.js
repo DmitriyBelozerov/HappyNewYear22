@@ -31,7 +31,7 @@ function Form(props) {
     return (
         <section>
             <form className="form" onSubmit={handleSubmitProduct}>
-                <input placeholder="Введите название продукта" onChange={handleChangeProduct} value={titleProduct || ''} required></input>
+                <input placeholder="Введите название продукта" onChange={handleChangeProduct} value={titleProduct || ''} required maxLength='30'></input>
                 <input type="number" placeholder="Введите сумму" onChange={handleChangePrice} value={titlePrice || ''} required></input>
                 <select required onChange={handleChangeLastname} value={lastName}>
                     <option disabled selected ></option>
@@ -39,13 +39,8 @@ function Form(props) {
                     <option value={'ustinov'}>Устиновы</option>
                     <option value={'trofimov'}>Трофимовы</option>
                 </select>
-                <button>Добавить</button>
+                <button className="form__button">Добавить</button>
             </form>
-
-            {/* <form className="form">
-                <input placeholder="Введите количество пар или человек"></input>
-                <button>Пересчитать</button>
-            </form> */}
         </section>
     )
 }

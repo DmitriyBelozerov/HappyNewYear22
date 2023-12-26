@@ -1,0 +1,5 @@
+.form__button {
+    background: linear-gradient(to right, rgb(228, 194, 194), rgb(255, 255, 255));
+    border: 1px solid red;
+    border-radius: 5px;
+}

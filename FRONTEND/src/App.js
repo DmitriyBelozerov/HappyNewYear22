@@ -25,7 +25,8 @@ function App() {
     }, [])
 
     function closePopup() {
-        setOpenPopup(false)
+        setOpenPopup(false);
+        setItemForDelete(undefined);
     }
 
     function handleSubmitProduct(valueProduct, valuePrice, lastName) {
@@ -49,19 +50,23 @@ function App() {
 
     function confirmDelete(item) {
         setOpenPopup(true);
-        setItemForDelete(item)
+        setItemForDelete(item);
+        setTimeout(() => {
+            setOpenPopup(false);
+            setItemForDelete(undefined);
+        }, 15000)
     }
 
     function showUfa() {
         setUfaView(true);
-        setTimeout(()=>{
+        setTimeout(() => {
             setUfaView(false);
         }, 10000)
     }
 
     function showSpb() {
         setSpbView(true);
-        setTimeout(()=>{
+        setTimeout(() => {
             setSpbView(false);
         }, 10000)
     }
@@ -69,13 +74,11 @@ function App() {
     return (
         <>
 
-            <Header showUfa={ showUfa} />
+            <Header showUfa={showUfa} />
             <Ufa show={ufaView}></Ufa>
             <Form onSubmitProduct={handleSubmitProduct} />
-            <div>
-                <ItemsList items={items} deleteItem={confirmDelete} />
-                <Result items={items} showSpb={showSpb}/>
-            </div>
+            <ItemsList items={items} deleteItem={confirmDelete} />
+            <Result items={items} showSpb={showSpb} />
             <Popup isOpen={openPopup} onClose={closePopup} onDelete={deleteItem} ></Popup>
             <Spb show={spbView}></Spb>
 

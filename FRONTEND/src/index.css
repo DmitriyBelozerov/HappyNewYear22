@@ -1,9 +1,12 @@
 @import url(./blocks/form/form.css);
+@import url(./blocks/form/__button/form__button.css);
 @import url(./blocks/header/header.css);
 @import url(./blocks/header/__title/header__title.css);
 @import url(./blocks/itemsList/itemsList.css);
 @import url(./blocks/main/main.css);
 @import url(./blocks/item/item.css);
+@import url(./blocks/item/__product/item__product.css);
+@import url(./blocks/item/__last-name/item__last-name.css);
 @import url(./blocks/item/__button/item__button.css);
 @import url(./blocks/item/__button/item__buttonDelete.css);
 @import url(./blocks/popup/popup.css);
