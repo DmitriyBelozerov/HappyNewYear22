@@ -1,3 +1,4 @@
+@import url(./vendor/normalize.css);
 @import url(./blocks/form/form.css);
 @import url(./blocks/form/__button/form__button.css);
 @import url(./blocks/header/header.css);
@@ -22,3 +23,8 @@
 @import url(./blocks/spb/spb.css);
 @import url(./blocks/spb/_view/spb_view.css);
 @import url(./blocks/spb/__title/spb__title.css);
+@import url(./blocks/result/result.css);
+@import url(./blocks/result/__lastname/result__lastname.css);
+@import url(./blocks/footer/footer.css);
+@import url(./blocks/footer/__autor-email/footer__autor-email.css);
+@import url(./blocks/footer/__year/footer__year.css);

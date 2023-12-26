@@ -1,5 +1,3 @@
-// import {cross} from '../images/crosscirclesvgrepocom.svg';
-
 function Item(props) {
 
     function handleDeleteItem() {
@@ -21,7 +19,7 @@ function Item(props) {
     return (
         <li className="item">
             <p className="item__product">{`${props.item.valueProduct} - ${props.item.valuePrice}р.  `}</p>
-            <p className="item__last-name">{` - ${handleLastname()}`}</p>
+            <p className="item__last-name">{handleLastname()}</p>
             <button className="item__buttonDelete" onClick={handleDeleteItem}>
             </button>
         </li>

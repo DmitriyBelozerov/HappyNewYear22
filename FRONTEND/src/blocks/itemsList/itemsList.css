@@ -1,4 +1,6 @@
 .itemsList {
     padding: 20px;
     margin: 0;
+    list-style-type: circle;
+    border-bottom: 2px solid black;
 }

@@ -7,8 +7,10 @@ const PORT = 3001;
 const allowedCors = [
     'http://localhost:3000',
     'http://localhost:3001',
-    'http://37.139.34.11'
-  ];
+    'http://37.139.34.11',
+    'http://dmbelozerov.ru',
+    'https://dmbelozerov.ru',
+];
 
 const app = express();
 app.use(bodyParser.json());

@@ -7,6 +7,7 @@ import api from './utils/api';
 import Popup from './component/Popup';
 import Ufa from './component/Ufa';
 import Spb from './component/Spb';
+import Footer from './component/Footer';
 
 
 function App() {
@@ -81,7 +82,7 @@ function App() {
             <Result items={items} showSpb={showSpb} />
             <Popup isOpen={openPopup} onClose={closePopup} onDelete={deleteItem} ></Popup>
             <Spb show={spbView}></Spb>
-
+            <Footer/>
         </>
     )
 }
