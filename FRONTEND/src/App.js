@@ -46,7 +46,6 @@ function App() {
         setOpenPopup(true);
         setItemForDelete(item)
     }
-    console.log(itemForDelete);
 
     return (
         <>

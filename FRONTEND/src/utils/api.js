@@ -1,11 +1,15 @@
+const Url = () => process.env.REACT_APP_API_URL || "http://37.139.34.11/items";
+
 const apiOptions = {
-    baseUrl: "http://37.139.34.11/items",
+    baseUrl: Url() ,
     headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json',
     },
 
 }
+
+console.log(Url());
 
 class Api {
     constructor(config) {
