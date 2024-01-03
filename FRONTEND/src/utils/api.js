@@ -1,15 +1,13 @@
-const Url = () => process.env.REACT_APP_API_URL || "http://37.139.34.11/items";
+const Url = () => process.env.REACT_APP_API_URL || "https://dmbelozerov.ru/items";
 
 const apiOptions = {
-    baseUrl: Url() ,
+    baseUrl: Url(),
     headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json',
     },
 
 }
-
-console.log(Url());
 
 class Api {
     constructor(config) {
