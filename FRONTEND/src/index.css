@@ -28,3 +28,4 @@
 @import url(./blocks/footer/footer.css);
 @import url(./blocks/footer/__autor-email/footer__autor-email.css);
 @import url(./blocks/footer/__year/footer__year.css);
+@import url(./blocks/form/__error/form__error.css);
